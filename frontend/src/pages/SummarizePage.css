@@ -1,0 +1,104 @@
+.container {
+  max-width: 40rem; /* ~640px */
+  margin: 2.5rem auto;
+  padding: 1.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 123, 255, 0.1);
+  animation: fadeInUp 0.7s ease forwards;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e3a8a; /* Tailwind's blue-900 */
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.description {
+  color: #475569; /* Tailwind's gray-600 */
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 1.125rem;
+}
+
+.textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: 2px solid #cbd5e1; /* Tailwind's gray-300 */
+  resize: none;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+}
+
+.textarea:focus {
+  border-color: #2563eb; /* blue-600 */
+  outline: none;
+}
+
+.button {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 12px 0;
+  background-color: #2563eb; /* blue-600 */
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.4);
+  user-select: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover:not(:disabled) {
+  background-color: #1e40af; /* blue-700 */
+  transform: translateY(-3px) scale(1.05);
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.summaryBox {
+  margin-top: 1.5rem;
+  padding: 1rem 1.25rem;
+  border-radius: 14px;
+  border: 2px solid #a7f3d0; /* green-300 */
+  background-color: #dcfce7; /* green-50 */
+  color: #065f46; /* green-800 */
+  font-size: 16px;
+  line-height: 1.5;
+  animation: fadeInUp 0.7s ease forwards;
+}
+
+.errorBox {
+  margin-top: 1.5rem;
+  padding: 1rem 1.25rem;
+  border-radius: 14px;
+  border: 2px solid #fecaca; /* red-300 */
+  background-color: #fee2e2; /* red-50 */
+  color: #991b1b; /* red-700 */
+  font-size: 16px;
+  line-height: 1.5;
+  animation: fadeInUp 0.7s ease forwards;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

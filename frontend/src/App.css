@@ -1,0 +1,82 @@
+/* Root container */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #f0f4ff, #ffffff);
+  min-height: 100vh;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Logo */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  will-change: filter, transform;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 1em #7f8cffcc);
+  transform: scale(1.05) rotate(3deg);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 1em #61dafbaa);
+  transform: scale(1.05) rotate(-3deg);
+}
+
+/* Logo spin animation */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Apply spin to second logo */
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Card-style section */
+.card {
+  padding: 2em;
+  margin: 2em auto;
+  max-width: 600px;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+}
+
+/* Docs link */
+.read-the-docs {
+  color: #666;
+  font-style: italic;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+.read-the-docs:hover {
+  color: #444;
+}
+
+/* Additional subtle page entrance animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
