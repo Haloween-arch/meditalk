@@ -13,7 +13,7 @@ app = FastAPI(
 # Enable CORS for local frontend development
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],  # Update with your frontend URL
+    allow_origins=["https://meditalk-1.onrender.com"],  # Update with your frontend URL
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
