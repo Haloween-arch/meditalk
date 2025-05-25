@@ -1,9 +1,9 @@
 fastapi
-uvicorn
+uvicorn[standard]
 gunicorn
-python-multipart
-pydantic
 transformers
 torch
-Pillow
-# (any other dependencies you use)
+PyMuPDF
+pydantic
+python-multipart
+scikit-learn
