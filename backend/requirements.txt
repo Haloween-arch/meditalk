@@ -1,8 +1,9 @@
 fastapi
 uvicorn
+gunicorn
 python-multipart
 pydantic
+transformers
+torch
 Pillow
-PyMuPDF
-easyocr
-
+# (any other dependencies you use)
