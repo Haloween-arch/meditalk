@@ -137,6 +137,12 @@ POST to `/qa/` with:
 
 ---
 
+## frontend
+https://meditalk-1.onrender.com
+
+## backend can be run over local server as it can't be deployed over free
+http://localhost:8000
+
 ## 🛡️ License
 
 MIT License
