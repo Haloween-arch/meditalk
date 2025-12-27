@@ -1,0 +1,65 @@
+# ===============================
+# Python cache / bytecode
+# ===============================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ===============================
+# Virtual environments
+# ===============================
+venv/
+.venv/
+env/
+ENV/
+
+# ===============================
+# Environment variables / secrets
+# ===============================
+.env
+.env.*
+*.key
+*.pem
+
+# ===============================
+# OS / Editor junk
+# ===============================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ===============================
+# Logs & temp files
+# ===============================
+*.log
+*.tmp
+
+# ===============================
+# Model / ML cache (if any)
+# ===============================
+*.pkl
+*.joblib
+.cache/
+huggingface/
+hf_cache/
+
+# ===============================
+# Audio / Generated outputs
+# ===============================
+static/audio/*
+!static/audio/.gitkeep
+
+# ===============================
+# Build / deployment artifacts
+# ===============================
+build/
+dist/
+*.egg-info/
+
+# ===============================
+# Test / coverage
+# ===============================
+.pytest_cache/
+.coverage
+htmlcov/
